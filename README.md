@@ -92,3 +92,20 @@ The well-known git checkout command is mainly used for handling branches, but it
 git checkout tag in new branch:
 
 `$ git checkout -b new-branch v1.0.0`
+
+## Verify the tags:
+    Owner or Admin should verify the tags.
+
+To sign a tag, add `-s` to your `git tag` command.
+
+```
+    $ git tag -s mytag
+    # Creates a signed tag
+```
+
+Verify your signed tag it by running `git tag -v [tag-name]`.
+
+```
+    $ git tag -v mytag
+    # Verifies the signed tag
+```
