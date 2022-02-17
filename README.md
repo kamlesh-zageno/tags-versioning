@@ -2,15 +2,15 @@
 
 ## Git commit message naming conventions:
 
-- DOC: Documenting code/feature/process/releases.
-- ADD: Adding new files.
-- REF: Code refactore, removing unused code/model.
-- ENH: Code enhancement, Optimization.
-- REV: Code revert.
-- FIX: Fixes, typos, spellings or naming conventions.
-- BUG: Bug fix.
-- TST: Testing feature, code, model.
-- STY: Style, Reformat your template.
+- **DOC**: Documenting code/feature/process/releases.
+- **ADD**: Adding new files.
+- **REF**: Code refactore, removing unused code/model.
+- **ENH**: Code enhancement, Optimization.
+- **REV**: Code revert.
+- **FIX**: Fixes, typos, spellings or naming conventions.
+- **BUG**: Bug fix.
+- **TST**: Testing feature, code, model.
+- **STY**: Style, Reformat your template.
 
 Bonus: You can include emojis in your commit message, To bring your feature or commit in limelight. [Source](https://gitmoji.dev/)
 
@@ -23,9 +23,9 @@ Software versioning summary [source](https://en.wikipedia.org/wiki/Software_vers
 |Release |1.2.0	
 |Post-release fixes |1.2.5
 
-- Major - v1.0.0: Big release of features.
-- Minor - v1.1.0 Small release features. 
-- Patch - v1.1.1 Bug fixes, Patches, Typos, post release fixes.
+- **Major** - v1.0.0: Big release of features.
+- **Minor** - v1.1.0 Small release features. 
+- **Patch** - v1.1.1 Bug fixes, Patches, Typos, post release fixes.
 - build/beta/rc - v1.1.1-beta, work in progress or beta build, E.g. 1.2.0-beta.
 
 # Git Tagging:
