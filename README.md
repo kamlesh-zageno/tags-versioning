@@ -1,4 +1,18 @@
-# tags-versioning
+# Git version control and tagging.
+
+## Git commit message naming conventions:
+
+- DOC: Documenting code/feature/process/releases.
+- ADD: Adding new files.
+- REF: Code refactore, removing unused code/model.
+- ENH: Code enhancement, Optimization.
+- REV: Code revert.
+- FIX: Fixes, typos, spellings or naming conventions.
+- BUG: Bug fix.
+- TST: Testing feature, code, model.
+- STY: Style, Reformat your template.
+
+Bonus: You can include emojis in your commit message, To bring your feature or commit in limelight. [Source](https://gitmoji.dev/)
 
 ## Versioning:
 
@@ -14,13 +28,17 @@ Software versioning summary [source](https://en.wikipedia.org/wiki/Software_vers
 - Patch - v1.1.1 Bug fixes, Patches, Typos, post release fixes.
 - build/beta/rc - v1.1.1-beta, work in progress or beta build, E.g. 1.2.0-beta.
 
-git tagging workflow:
+# Git Tagging:
+
+Refer to the official [document](https://git-scm.com/book/en/v2/Git-Basics-Tagging)
+
+## git tagging workflow
+
 [source](https://softwareengineering.stackexchange.com/questions/165725/git-branching-and-tagging-best-practices/165733#165733)
 
 ![workflow](./git_tagging.png)
 
-
-Git Create Tag
+## Git Create Tag
 Create a **`lightweight`** tag on a current branch:
 
 `$ git tag <tag_name>`
@@ -42,15 +60,16 @@ Annotated vs Lightweight: A Git tag created with -a option is called “annotate
 v1.0.0
    |--------------- the current commit is tagged with this tag name
 ```
-
-Push all tags to remote
-
-`$ git push origin --tags`
-
+## Git push tags
 
 Push a single tag to remote
 
 `$ git push origin <tag_name>`
+
+
+Push all tags to remote
+
+`$ git push origin --tags`
 
 ## Delete a remote Git tag:
 
@@ -64,3 +83,12 @@ Alternatively, a remote Git tag can be deleted as follows:
 Remove a Git tag from a local repository:
 
 `$ git tag -d <tag_name>`
+
+## Checkout Git tag
+The well-known git checkout command is mainly used for handling branches, but it can also be used for tags:
+
+`$ git checkout v1.0.0`
+
+git checkout tag in new branch:
+
+`$ git checkout -b new-branch v1.0.0`
